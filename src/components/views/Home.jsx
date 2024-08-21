@@ -4,6 +4,7 @@ import HerbertHero from '../home/HerbertHero'
 import Features from '../home/Features'
 import Plans from '../home/Plans'
 import Faq from '../home/Faq'
+import Help from '../../common/Help'
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <Plans />
             <Team />
             <Faq />
+            <Help />
         </>
     )
 }

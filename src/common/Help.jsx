@@ -5,7 +5,7 @@ import PrimaryParagraph from "./PrimaryParagraph"
 const Help = () => {
     return (
         <div className="px-6 bg-bgLinearGradient">
-            <div className="container lg:mt-[120px] sm:mt-20 mt-16 bg-light_orange sm:py-16 py-5 rounded-xl flex items-center justify-center flex-col">
+            <div className="container max-w-[1180px] lg:mt-[120px] sm:mt-20 mt-16 bg-light_orange sm:py-16 py-5 rounded-xl flex items-center justify-center flex-col">
                 <PrimaryHeading className="max-w-[632px] text-center">
                     <span className="text-white">Need Help in Your Visa? Ask Herbert Now!</span>
                 </PrimaryHeading>

@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Rubik: "'Rubik',sans-serif",
+        Lato: "'Lato',sans-serif",
       },
       colors: {
         grey: "#5f5f5f",
@@ -38,6 +39,9 @@ module.exports = {
       },
       boxShadow: {
         accordionShadow: "0px 0px 16px 6px #8080801F",
+      },
+      screens: {
+        'custom_lg': '1072px',
       }
     },
   },

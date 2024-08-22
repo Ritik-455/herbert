@@ -89,3 +89,32 @@ export const FAQ_CONTENT = [
         content: "Herbert is an AI-powered assistant designed to help with German visa and immigration processes. It provides guidance, answers questions, and helps you navigate the requirements and procedures involved."
     },
 ]
+
+export const PLANS_DATA = [
+    {
+        heading: "$5/mo",
+        para: "Ideal for newcomers! Get quick and reliable answers to your basic questions about German immigration policies. Perfect for a brief introduction without long-term commitment.",
+        message: "10 messages",
+        upgrade: "Upgrade to Basic",
+        plan: "Basic"
+    },
+    {
+        heading: "$10/mo",
+        para: "Your go-to resource for thorough visa application preparation. Ensure you have all the necessary information and answers to confidently navigate the German visa process.",
+        message: "25 messages",
+        upgrade: "Upgrade to Standard",
+        plan: "Standard"
+    },
+    {
+        heading: "$20/mo",
+        para: "Ideal for newcomers! Get quick and reliable answers to your basic questions about German immigration policies. Perfect for a brief introduction without long-term commitment.",
+        message: "50 messages",
+        upgrade: "Upgrade to Premium",
+        plan: "Premium"
+    },
+]
+export const NAV_LINKS_LIST = [
+    { navlink: "Herbert", url: "/" },
+    { navlink: "Sources", url: "#blog" },
+    { navlink: "Our Vision", url: "#vision" },
+];

@@ -11,7 +11,7 @@ const Features = () => {
     <div className="2xl:max-w-[1536px] mx-auto relative">
       <div className='container max-w-[1180px] py-20 lg:pb-0 lg:pt-[119px] lg:mb-[119px]'>
         <PrimaryHeading text="Herbert Main" className="text-center" >
-          <span className='text-orange'> Features</span>
+          <span className='text-orange font-Lato'> Features</span>
         </PrimaryHeading>
         <PrimaryParagraph text="Lorem ipsum dolor sit amet consectetur. Tellus ipsum semper eget ornare justo netus proin lacus sed." className="text-center max-w-[556px] mx-auto mt-4" />
         <div className="hidden lg:flex justify-between flex-wrap lg:flex-nowrap">
@@ -23,7 +23,7 @@ const Features = () => {
               </div>
             ))}
           </div>
-          <img src={middleMen} alt="middleMen" className='max-w-[324px] w-100 h-[452px] mt-14' />
+          <img src={middleMen} alt="middleMen" className='max-w-[324px] w-100 h-[452px] mt-14 pointer-events-none' />
           <div className="">
             {limitedFeatures2.map((data, index) => (
               <div className="max-w-[325px] w-full mt-14" key={index}>
@@ -34,7 +34,7 @@ const Features = () => {
           </div>
         </div>
         <div className="">
-          <div className="lg:hidden flex justify-center"><img src={middleMen} alt="middleMen" className='max-w-[324px] w-100 h-[452px] mt-6' /></div>
+          <div className="lg:hidden flex justify-center"><img src={middleMen} alt="middleMen" className='max-w-[324px] w-100 h-[452px] mt-6 pointer-events-none' /></div>
           <div className="flex lg:hidden justify-between">
             <div className="">
               {limitedFeatures.map((data, index) => (

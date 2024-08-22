@@ -37,6 +37,9 @@ module.exports = {
         },
         center: true,
       },
+      screens: {
+        'custom_lg': '1072px',
+      }
     },
   },
   plugins: [],

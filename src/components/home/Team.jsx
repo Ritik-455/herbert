@@ -11,7 +11,7 @@ const Team = () => {
       <div className='absolute w-[701px] h-[602px] right-0 -translate-y-1/2 top-1/2 z-10 pointer-events-none max-lg:opacity-30 sm:flex hidden'>
         <img src={teamPosImg} alt="painting of some people" className='w-full h-full' />
       </div>
-      <div className='container flex items-start justify-start flex-col relative z-20'>
+      <div className='container max-w-[1180px] flex items-start justify-start flex-col relative z-20'>
         <PrimaryHeading text="Team " LeadingText=" Resources">
           <span className='text-orange'>&</span>
         </PrimaryHeading>

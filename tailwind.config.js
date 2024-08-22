@@ -28,7 +28,7 @@ module.exports = {
       backgroundImage: {
         "orange_gradient": "linear-gradient(241.09deg, rgba(255, 76, 36, 0.15) -34.32%, rgba(255, 227, 108, 0.15) 109.3%)",
         "bgLinearGradient": "linear-gradient(to bottom, white 70%, #FFF8F2 30%)",
-        "plans":"url(./assets/images/home/png/plans-bg-img.png)"
+        "plans": "url(./assets/images/home/png/plans-bg-img.png)"
       },
       container: {
         padding: {
@@ -37,6 +37,9 @@ module.exports = {
         },
         center: true,
       },
+      boxShadow: {
+        accordionShadow: "0px 0px 16px 6px #8080801F",
+      }
     },
   },
   plugins: [],

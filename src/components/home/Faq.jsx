@@ -21,16 +21,14 @@ const Faq = () => {
         end: "bottom 40%",
         animation: tl,
         markers: false,
-        pin: true,
+        pin: false,
         toggleActions: "play",
       });
-
-      FAQ_CONTENT.forEach((_, index) => {
-        tl.from(`.accord_item_${index}`, {
-          x: index % 2 === 0 ? -1440 : 1440,
-          stagger: 0.3,
-        });
-      });
+      tl.from(".accord_items", {
+        scale: 0,
+        opacity: 0,
+        stagger: 0.5,
+      })
     });
     return () => aot.revert();
   }, []);
@@ -42,7 +40,7 @@ const Faq = () => {
   };
 
   return (
-    <div className='relative'>
+    <div className='relative max-w-[1920px] mx-auto'>
       <div className='absolute -bottom-[40%] left-0 pointer-events-none'>
         <img src={faqBackgroundVector} alt="faq background vector" className='w-full h-full' />
       </div>
@@ -55,7 +53,7 @@ const Faq = () => {
         </div>
         <div className='row flex-wrap'>
           {FAQ_CONTENT.map((obj, index) => (
-            <div className={`lg:col-6 px-5 w-full sm:mb-6 mb-4 accord_item_${index} accord_items`} key={index}>
+            <div className="lg:col-6 px-5 w-full sm:mb-6 mb-4 accord_items" key={index}>
               <div
                 className={`max-lg:h-full rounded-md transition-all duration-300 ease-in-out ${activeIndex === index ? 'shadow-accordionShadow' : 'border border-[#00000029]'
                   }`}

@@ -8,7 +8,7 @@ import { CARD_DATA } from "../../utils/helper";
 
 const HerbertHero = () => {
   return (
-    <div className="bg-heroBgImg bg-full relative">
+    <div className="bg-heroBgImg bg-full relative max-w-[1920px] mx-auto">
       <Header />
       <div className="absolute lg:top-[23%] top-[10%] left-[9%] max-sm:hidden xl:opacity-100 sm:opacity-15">
         <img src={helloLeftBoy} alt="helloLeftBoy" width={329} />

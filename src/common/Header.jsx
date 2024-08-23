@@ -12,7 +12,7 @@ const Header = () => {
     !nav && body.classList.remove("max-lg:overflow-hidden");
   };
   return (
-    <div className="container">
+    <div className="container max-w-[1180px]">
       <div className="h-[100px] flex items-center justify-between">
         <a href="/">
           <img className="" src={navLogoImg} alt="navLogoImg" width={180} />
@@ -28,13 +28,13 @@ const Header = () => {
         <div
           className={`${nav && "max-lg:left-[-100%]"} ${
             !nav && "max-lg:start-0"
-          } flex items-center gap-11 z-10 max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 max-lg:bg-white`}
+          } flex items-center gap-11 z-10 max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 max-lg:bg-white transition-all duration-300 ease-linear`}
         >
           {NAV_LINKS_LIST.map((obj, index) => (
             <a
               href={obj.url}
               key={index}
-              className="leading-6 text-grey relative after:absolute after:h-[3px] after:w-0 hover:after:w-[50%] after:bottom-0 after:left-[25%] after:bg-dark_black after:rounded-xl transition duration ease-linear hover:text-dark_black"
+              className="leading-6 text-grey relative after:absolute after:h-[3px] after:w-0 hover:after:w-[50%] after:bottom-0 after:left-[25%] after:bg-dark_black after:rounded-xl transition duration-300 after:transition-all after:duration-300 ease-linear hover:text-dark_black"
             >
               {obj.navlink}
             </a>

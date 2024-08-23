@@ -16,7 +16,7 @@ const About = () => {
       <Code />
       <Regulation />
       <Visa/>
-      <Act sectionData={VISA_DATA} />
+      <Act />
       <HandBook />
     </>
   );

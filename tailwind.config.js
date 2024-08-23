@@ -28,6 +28,7 @@ module.exports = {
         bgLinearGradient: "linear-gradient(to bottom, white 70%, #FFF8F2 30%)",
         plans: "url(./assets/images/home/png/plans-bg-img.png)",
         heroBgImg: "url(./assets/images/home/webp/Hero-bg-img.webp)",
+        sources_hero: "url(./assets/images/sources/webp/sources-hero.webp)",
       },
       backgroundSize: {
         full: "100% 100%",

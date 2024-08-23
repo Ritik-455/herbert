@@ -9,6 +9,9 @@ export const Regulation = () => {
         <span className='text-orange font-Rubik'>  Regulation</span>
       </PrimaryHeading>
       <PrimaryParagraph text="This regulation details the conditions under which foreign nationals can work in Germany. Herbert's training in the Beschäftigungsverordnung allows for accurate guidance on:" className="max-w-[716px] text-center mx-auto mt-4" />
+      <div className="flex gap-[73px]">
+        <div className="max-w-[325px] w-full"></div>
+      </div>
     </div>
   )
 }

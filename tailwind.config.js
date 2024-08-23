@@ -28,7 +28,8 @@ module.exports = {
         bgLinearGradient: "linear-gradient(to bottom, white 70%, #FFF8F2 30%)",
         plans: "url(./assets/images/home/png/plans-bg-img.png)",
         heroBgImg: "url(./assets/images/home/webp/Hero-bg-img.webp)",
-        sources_hero: "url(./assets/images/sources/webp/sources-hero.webp)",
+        sources_hero: "url(./assets/images/about/webp/sources-hero.webp)",
+        visa_code:"url(./assets/images/about/png/visa-bg-img.png)",
       },
       backgroundSize: {
         full: "100% 100%",
@@ -40,11 +41,11 @@ module.exports = {
         },
         center: true,
       },
-      boxShadow: {
-        accordionShadow: "0px 0px 16px 6px #8080801F",
-      },
       screens: {
         'custom_lg': '1072px',
+      },
+      boxShadow: {
+        accordionShadow: "0px 0px 16px 6px #8080801F",
       }
     },
   },

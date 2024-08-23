@@ -12,6 +12,7 @@ module.exports = {
         orange: "#FF4C24",
         light_orange: "#FF9748",
         yellow: "#FFE36C",
+        light_grey: "#00000029",
       },
       fontSize: {
         "2lg": "44px",
@@ -29,6 +30,7 @@ module.exports = {
         plans: "url(./assets/images/home/png/plans-bg-img.png)",
         heroBgImg: "url(./assets/images/home/webp/Hero-bg-img.webp)",
         sources_hero: "url(./assets/images/about/webp/sources-hero.webp)",
+        visa_code:"url(./assets/images/about/png/visa-bg-img.png)",
       },
       backgroundSize: {
         full: "100% 100%",

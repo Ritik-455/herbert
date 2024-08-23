@@ -28,7 +28,7 @@ const Plans = () => {
     return () => tx.revert();
   }, []);
   return (
-    <div className='bg-plans bg-cover bg-no-repeat bg-center card max-w-[1536px] overflow-hidden mx-auto'>
+    <div className='bg-plans bg-cover bg-no-repeat bg-center card max-w-[1920px] overflow-hidden mx-auto'>
       <div className="container max-w-[1180px] py-16 lg:py-20">
         <PrimaryHeading text="Friendly Pricing" className="text-center" >
           <span className='text-orange font-Rubik'> Plans</span>

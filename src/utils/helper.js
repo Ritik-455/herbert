@@ -7,6 +7,9 @@ import featuresSix from "../assets/images/home/svg/features-numb-6.svg";
 import facebook from "../assets/images/home/svg/Facebook.svg";
 import instagram from "../assets/images/home/svg/Instagram.svg";
 import linkedIn from "../assets/images/home/svg/LinkedIn.svg";
+import setting from '../assets/images/about/svg/setting.svg'
+import request from '../assets/images/about/svg/request.svg'
+import timer from '../assets/images/about/svg/timer.svg'
 import cardFirst from '../assets/images/home/svg/card-img-first.svg'
 import cardSecond from '../assets/images/home/svg/card-img-second.svg'
 import cardThird from '../assets/images/home/svg/card-img-third.svg'
@@ -143,6 +146,38 @@ export const VISA_DATA = [
     ],
   },
 ];
+export const REGULATIONS_DATA = [
+  {
+    img: featuresOne,
+    para: "Work permit requirements"
+  },
+  {
+    img: featuresTwo,
+    para: "Job-seeking visas"
+  },
+  {
+    img: featuresThree,
+    para: "Self-employment regulations"
+  },
+  {
+    img: featuresFour,
+    para: "Specific provisions for various professional groups"
+  }
+]
+export const VISA_CODE_DATA = [
+  {
+    img: setting,
+    para: "Visa application processes"
+  },
+  {
+    img: request,
+    para: "Required documentation"
+  },
+  {
+    img: timer,
+    para: "Visa fees and processing times"
+  },
+]
 export const CARD_DATA = [
   {
     img: cardFirst,

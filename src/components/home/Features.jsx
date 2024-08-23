@@ -39,7 +39,7 @@ const Features = () => {
   const limitedFeatures2 = FEATURES_DATA.slice(3, 6);
 
   return (
-    <div className="2xl:max-w-[1536px] mx-auto relative overflow-hidden  main">
+    <div className="2xl:max-w-[1920px] mx-auto relative overflow-hidden  main">
       <div className='container max-w-[1180px] py-20 xl:pb-0 xl:pt-[119px] xl:mb-[119px]'>
         <PrimaryHeading text="Herbert Main" className="text-center">
           <span className='text-orange font-Rubik'> Features</span>

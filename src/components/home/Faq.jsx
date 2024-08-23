@@ -29,6 +29,7 @@ const Faq = () => {
       })
       tl.from(".accord_items", {
         x: -1440,
+        stagger: 0.3,
       })
     });
     return () => aot.revert();
@@ -42,7 +43,7 @@ const Faq = () => {
 
   return (
     <div className='relative'>
-      <div className='absolute -bottom-[40%] left-0'>
+      <div className='absolute -bottom-[40%] left-0 pointer-events-none'>
         <img src={faqBackgroundVector} alt="faq background vector" className='w-full h-full' />
       </div>
       <div className='container max-w-[1188px] faq_animation max-lg:mt-20 max-sm:mt-0'>

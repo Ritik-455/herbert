@@ -10,6 +10,9 @@ import linkedIn from "../assets/images/home/svg/LinkedIn.svg";
 import setting from '../assets/images/about/svg/setting.svg'
 import request from '../assets/images/about/svg/request.svg'
 import timer from '../assets/images/about/svg/timer.svg'
+import cardFirst from '../assets/images/home/svg/card-img-first.svg'
+import cardSecond from '../assets/images/home/svg/card-img-second.svg'
+import cardThird from '../assets/images/home/svg/card-img-third.svg'
 
 export const FEATURES_DATA = [
   {
@@ -174,4 +177,21 @@ export const VISA_CODE_DATA = [
     img: timer,
     para: "Visa fees and processing times"
   },
+]
+export const CARD_DATA = [
+  {
+    img: cardFirst,
+    mainText: "Interactive Forms",
+    content: "Simplify visa application forms",
+  },
+  {
+    img: cardSecond,
+    mainText: "Document Checklist",
+    content: "Personalized document preparation",
+  },
+  {
+    img: cardThird,
+    mainText: "Language Assistance",
+    content: "German language skills assessment",
+  }
 ]

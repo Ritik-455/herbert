@@ -47,6 +47,7 @@ module.exports = {
       },
       boxShadow: {
         accordionShadow: "0px 0px 16px 6px #8080801F",
+        cardHoverShadow: "0px 0px 16px 6px #8080801F"
       }
     },
   },

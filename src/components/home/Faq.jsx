@@ -22,18 +22,18 @@ const Faq = () => {
         animation: tl,
         markers: false,
         pin: true,
-        scrub: 5,
+        toggleActions: "play",
       });
-      tl.from(".heading_text", {
-        x: -1440,
-      })
-      tl.from(".accord_items", {
-        x: -1440,
-        stagger: 0.3,
-      })
+
+      FAQ_CONTENT.forEach((_, index) => {
+        tl.from(`.accord_item_${index}`, {
+          x: index % 2 === 0 ? -1440 : 1440,
+          stagger: 0.3,
+        });
+      });
     });
     return () => aot.revert();
-  }, [])
+  }, []);
 
   const [activeIndex, setActiveIndex] = useState(-1);
 
@@ -55,7 +55,7 @@ const Faq = () => {
         </div>
         <div className='row flex-wrap'>
           {FAQ_CONTENT.map((obj, index) => (
-            <div className='lg:col-6 px-5 w-full sm:mb-6 mb-4 accord_items' key={index}>
+            <div className={`lg:col-6 px-5 w-full sm:mb-6 mb-4 accord_item_${index} accord_items`} key={index}>
               <div
                 className={`max-lg:h-full rounded-md transition-all duration-300 ease-in-out ${activeIndex === index ? 'shadow-accordionShadow' : 'border border-[#00000029]'
                   }`}

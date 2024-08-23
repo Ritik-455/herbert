@@ -12,6 +12,7 @@ module.exports = {
         orange: "#FF4C24",
         light_orange: "#FF9748",
         yellow: "#FFE36C",
+        light_grey: "#00000029",
       },
       fontSize: {
         "2lg": "44px",

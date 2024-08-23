@@ -6,12 +6,13 @@ import HandBook from "../about/HandBook";
 import Act from "../about/common/Act";
 import { RESIDENCE_DATA, VISA_DATA } from "../../utils/helper";
 import Visa from "../about/Visa";
+import Residence from "../about/Residence";
 
 const About = () => {
   return (
     <>
       <SourcesHero />
-      <Act sectionData={RESIDENCE_DATA} />
+      <Residence />
       <Code />
       <Regulation />
       <Visa/>

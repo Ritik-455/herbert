@@ -18,7 +18,7 @@ const Plans = () => {
         end: '30% 55%',
         animation: cardAnimation,
         markers: false,
-        scrub: 5,
+        toggleActions: "play",
       });
       cardAnimation.from('.card_anim', {
         x: -1440,

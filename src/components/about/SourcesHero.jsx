@@ -16,7 +16,7 @@ const AboutHero = () => {
               Expertise
             </h1>
             <PrimaryParagraph
-              className="xl:mb-[42px] md:mb-9 mb-8 font-Lato max-w-[685px] mx-auto sm:leading-6 max-sm:text-sm leading-5"
+              className="xl:mb-[42px] md:mb-9 mb-8 max-w-[685px] mx-auto sm:leading-6 max-sm:text-sm leading-5"
               text="Herbert, our AI chatbot, is built on a comprehensive understanding of German immigration law. To ensure accuracy and reliability, Herbert's knowledge base is derived from the following authoritative sources:"
             />
             <PrimaryButton BtnText="Contact Us" className="py-3" />

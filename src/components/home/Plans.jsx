@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import PrimaryHeading from '../../common/PrimaryHeading'
 import PrimaryParagraph from '../../common/PrimaryParagraph'
 import { PLANS_DATA } from '../../utils/helper'
 import { TickMarck } from '../../common/Icon'
 import PrimaryButton from '../../common/PrimaryButton'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Plans = () => {
   return (

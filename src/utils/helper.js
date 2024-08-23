@@ -118,3 +118,4 @@ export const FAQ_CONTENT = [
         content: "Herbert is an AI-powered assistant designed to help with German visa and immigration processes. It provides guidance, answers questions, and helps you navigate the requirements and procedures involved."
     },
 ]
+

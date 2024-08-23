@@ -8,14 +8,14 @@ import { gsap } from "gsap";
 const Header = () => {
 
   useEffect(() => {
-    let tl = gsap.timeline()
+    let tl = gsap.timeline();
     tl.fromTo(".herbertLogo", {
       y: -200,
     },
       {
         y: 0,
         duration: 1,
-      })
+      });
 
     tl.fromTo(".navLinks", {
       y: -200,
@@ -24,9 +24,8 @@ const Header = () => {
         y: 0,
         stagger: 0.3,
       }
-    )
-
-  })
+    );
+  }, []);
 
   const [nav, setNav] = useState(true);
   const handleNavbar = () => {
@@ -38,7 +37,7 @@ const Header = () => {
   return (
     <div className="container max-w-[1180px]">
       <div className="h-[100px] flex items-center justify-between">
-        <a href="/" className="herbertLogo">
+        <a href="/" className="herbertLogo z-50">
           <img className="" src={navLogoImg} alt="navLogoImg" width={180} />
         </a>
         <div
@@ -57,7 +56,7 @@ const Header = () => {
             <a
               href={obj.url}
               key={index}
-              className="leading-6 navLinks text-grey relative after:absolute decoration-1 after:h-[3px] after:w-0 hover:after:w-[50%] after:bottom-0 after:left-[25%] after:bg-dark_black after:rounded-xl transition duration-300 after:transition-all after:duration-300 ease-linear hover:text-dark_black"
+              className={`leading-6 navLinks text-grey relative after:absolute decoration-1 after:h-[3px] after:w-0 hover:after:w-[50%] after:bottom-0 after:left-[25%] after:bg-dark_black after:rounded-xl transition duration-300 after:transition-all after:duration-300 ease-linear hover:text-dark_black ${index === 0 || index === 1 ? "after:w-[327px] after:h-px after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-6 after:bg-[#00000029]" : ""}`}
             >
               {obj.navlink}
             </a>

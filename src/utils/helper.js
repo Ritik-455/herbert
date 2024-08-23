@@ -7,6 +7,9 @@ import featuresSix from "../assets/images/home/svg/features-numb-6.svg";
 import facebook from "../assets/images/home/svg/Facebook.svg";
 import instagram from "../assets/images/home/svg/Instagram.svg";
 import linkedIn from "../assets/images/home/svg/LinkedIn.svg";
+import cardFirst from '../assets/images/home/svg/card-img-first.svg'
+import cardSecond from '../assets/images/home/svg/card-img-second.svg'
+import cardThird from '../assets/images/home/svg/card-img-third.svg'
 
 export const FEATURES_DATA = [
   {
@@ -140,3 +143,20 @@ export const VISA_DATA = [
     ],
   },
 ];
+export const CARD_DATA = [
+  {
+    img: cardFirst,
+    mainText: "Interactive Forms",
+    content: "Simplify visa application forms",
+  },
+  {
+    img: cardSecond,
+    mainText: "Document Checklist",
+    content: "Personalized document preparation",
+  },
+  {
+    img: cardThird,
+    mainText: "Language Assistance",
+    content: "German language skills assessment",
+  }
+]

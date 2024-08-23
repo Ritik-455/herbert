@@ -1,7 +1,7 @@
 import React from "react";
 import PrimaryHeading from "../../../common/PrimaryHeading";
 import PrimaryParagraph from "../../../common/PrimaryParagraph";
-import actImage from "../../../assets/images/sources/webp/act.webp";
+import actImage from "../../../assets/images/about/webp/act.webp";
 import { VISA_DATA } from "../../../utils/helper";
 
 const Act = ({ sectionData }) => {

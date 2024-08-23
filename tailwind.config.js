@@ -37,11 +37,11 @@ module.exports = {
         },
         center: true,
       },
-      boxShadow: {
-        accordionShadow: "0px 0px 16px 6px #8080801F",
-      },
       screens: {
         'custom_lg': '1072px',
+      },
+      boxShadow: {
+        accordionShadow: "0px 0px 16px 6px #8080801F",
       }
     },
   },

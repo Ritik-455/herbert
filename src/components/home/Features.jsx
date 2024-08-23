@@ -18,18 +18,20 @@ const Features = () => {
       ScrollTrigger.create({
         trigger: '.main',
         start: '10% 8%',
-        end: '80% 44%',
+        end: '120% 60%',
         animation: imageAnimation,
         markers: false,
         pin: true,
-        scrub: 5,
+        toggleActions: "play",
       });
       imageAnimation.from('.middleImg', { opacity: 0, scale: 0 });
       imageAnimation.from(".card_animation", {
         x: -1000,
+        stagger: 0.3
       })
       imageAnimation.from(".card_animation2", {
         x: 1000,
+        stagger: 0.3
       })
 
     });

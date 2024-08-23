@@ -16,8 +16,8 @@ const HerbertHero = () => {
       <div className="absolute max-sm:hidden end-0 lg:top-[29%] top-[13%] right-[3%] xl:opacity-100 sm:opacity-15">
         <img src={helloRightBoy} alt="helloRightBoy" width={324} />
       </div>
-      <div className="xl:pt-[139px] pt-20 lg:pb-[198px] pb-11 relative z-10">
-        <div className="container max-w-[1180px] mb-20">
+      <div className="xl:pt-[139px] container max-w-[1180px]  pt-20 lg:pb-[198px] pb-11 relative z-10">
+        <div className="mb-20">
           <div className="mx-auto text-center">
             <h1 className="font-Rubik sm:text-3lg text-3xl font-semibold sm:leading-lg text-dark_black max-w-[716px] text-center sm:pb-4 pb-[14px] mx-auto">
               Navigating <span className="text-orange font-Rubik">German Bureaucracy</span>{" "}

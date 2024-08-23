@@ -1,6 +1,6 @@
 const PrimaryParagraph = ({ text, className }) => {
     return (
-        <p className={`font-normal text-base text-grey ${className}`}>{text}</p>
+        <p className={`font-normal sm:text-base text-sm text-grey ${className}`}>{text}</p>
     )
 }
 

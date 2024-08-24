@@ -58,7 +58,9 @@ const Team = () => {
           <li className='text-grey'>Outsourced development to freelancers</li>
           <li className='text-grey'>Budget: $15,000</li>
         </ul>
-        <PrimaryButton BtnText="Learn more" className="sm:mt-11 mt-8"></PrimaryButton>
+        <div className='teamAnimation'>
+          <PrimaryButton BtnText="Learn more" className="sm:mt-11 mt-8"></PrimaryButton>
+        </div>
       </div>
     </div>
   )

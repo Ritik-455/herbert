@@ -3,7 +3,7 @@ import { FOOTER_DATA } from '../utils/helper'
 import PrimaryParagraph from './PrimaryParagraph'
 const Footer = () => {
   return (
-    <div className='bg-[#FFF8F2] lg:pt-20 md:pt-16 pt-11 pb-4'>
+    <div className='bg-[#FFF8F2] lg:pt-20 md:pt-16 pt-11 pb-4 max-w-[1920px] mx-auto'>
       <div className='container max-w-[1180px]'>
         <div className='row lg:justify-between justify-start'>
           <div className='lg:col-4 md:col-6 w-full flex flex-col items-start justify-start px-5'>

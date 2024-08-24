@@ -1,6 +1,6 @@
 const PrimaryHeading = ({ text, children, LeadingText, className }) => {
     return (
-        <h2 className={`font-Rubik font-semibold sm:text-5xl text-2xl sm:leading-md text-dark_black ${className}`}>
+        <h2 className={`font-Rubik font-semibold lg:text-5xl md:text-3xl text-2xl md:leading-md text-dark_black ${className}`}>
             {text}
             {children}
             {LeadingText}

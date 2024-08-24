@@ -46,14 +46,14 @@ const HerbertHero = () => {
   return (
     <div className="bg-heroBgImg bg-full relative max-w-[1920px] mx-auto">
       <Header />
-      <div className="absolute lg:top-[23%] top-[10%] left-[9%] max-sm:hidden xl:opacity-100 sm:opacity-15 heroMainText">
+      <div className="absolute lg:top-[16%] top-[10%] left-[7%] max-sm:hidden xl:opacity-100 sm:opacity-15 heroMainText">
         <img src={helloLeftBoy} alt="helloLeftBoy" width={329} />
       </div>
-      <div className="absolute max-sm:hidden end-0 lg:top-[29%] top-[13%] right-[3%] xl:opacity-100 heroMainText sm:opacity-15">
+      <div className="absolute max-sm:hidden end-0 lg:top-[23%] top-[13%] right-[3%] xl:opacity-100 heroMainText sm:opacity-15">
         <img src={helloRightBoy} alt="helloRightBoy" width={324} />
       </div>
       <div className="xl:pt-[139px] container max-w-[1180px] pt-20 lg:pb-[198px] pb-11 relative z-10">
-        <div className="mb-20">
+        <div className="max-sm:mb-20">
           <div className="mx-auto text-center">
             <h1 className="font-Rubik sm:text-3lg text-3xl font-semibold sm:leading-lg text-dark_black max-w-[716px] text-center sm:pb-4 pb-[14px] mx-auto heroMainText">
               Navigating <span className="text-orange font-Rubik">German Bureaucracy</span>{" "}
@@ -64,7 +64,9 @@ const HerbertHero = () => {
               text="Herbert Visa: Your AI-powered assistant for German visa and
                 immigration processes"
             />
-            <PrimaryButton BtnText="Start your conversation with Herbert" className="max-sm:text-sm cmnBtn" />
+            <div className="heroCardAnimation">
+              <PrimaryButton BtnText="Start your conversation with Herbert" className="max-sm:text-sm" />
+            </div>
           </div>
         </div>
         <div className="flex items-center justify-center sm:hidden">

@@ -6,6 +6,7 @@ import HandBook from "../about/HandBook";
 import Act from "../about/common/Act";
 import Visa from "../about/Visa";
 import Residence from "../about/Residence";
+import Help from "../../common/Help";
 
 const About = () => {
   return (
@@ -14,9 +15,10 @@ const About = () => {
       <Residence />
       <Code />
       <Regulation />
-      <Visa/>
+      <Visa />
       <Act />
       <HandBook />
+      <Help />
     </>
   );
 };

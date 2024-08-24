@@ -52,10 +52,10 @@ const HerbertHero = () => {
       <div className="absolute max-sm:hidden end-0 lg:top-[23%] top-[13%] right-[3%] xl:opacity-100 heroMainText sm:opacity-15">
         <img src={helloRightBoy} alt="helloRightBoy" width={324} />
       </div>
-      <div className="xl:pt-[139px] container max-w-[1180px] pt-20 lg:pb-[198px] pb-11 relative z-10">
+      <div className="xl:pt-[139px] container max-w-[1180px] pt-20 lg:pb-[198px] pb-20 relative z-10">
         <div className="max-sm:mb-20">
           <div className="mx-auto text-center">
-            <h1 className="font-Rubik sm:text-3lg text-3xl font-semibold sm:leading-lg text-dark_black max-w-[716px] text-center sm:pb-4 pb-[14px] mx-auto heroMainText">
+            <h1 className="font-Rubik md:text-3lg sm:text-5xl text-3xl font-semibold sm:leading-lg text-dark_black max-w-[716px] text-center sm:pb-4 pb-[14px] mx-auto heroMainText">
               Navigating <span className="text-orange font-Rubik">German Bureaucracy</span>{" "}
               with ease
             </h1>

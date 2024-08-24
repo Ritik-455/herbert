@@ -21,33 +21,7 @@ const HerbertHero = () => {
         scale: 1,
         delay: 2,
         duration: 1,
-      })
-    tl.fromTo(".heroMainPara",
-      {
-        scale: 0,
-      },
-      {
-        scale: 1,
-        delay: 0.5,
-        duration: 1,
-      })
-    tl.fromTo(".leftBoy",
-      {
-        scale: 0,
-      },
-      {
-        scale: 1,
-        delay: 0.5,
-        duration: 1,
-      })
-    tl.fromTo(".rightBoy",
-      {
-        scale: 0,
-      },
-      {
-        scale: 1,
-        delay: 0.5,
-        duration: 1,
+        stagger: 0.5,
       })
   })
 
@@ -72,10 +46,10 @@ const HerbertHero = () => {
   return (
     <div className="bg-heroBgImg bg-full relative max-w-[1920px] mx-auto">
       <Header />
-      <div className="absolute lg:top-[23%] top-[10%] left-[9%] max-sm:hidden xl:opacity-100 sm:opacity-15 leftBoy">
+      <div className="absolute lg:top-[23%] top-[10%] left-[9%] max-sm:hidden xl:opacity-100 sm:opacity-15 heroMainText">
         <img src={helloLeftBoy} alt="helloLeftBoy" width={329} />
       </div>
-      <div className="absolute max-sm:hidden end-0 lg:top-[29%] top-[13%] right-[3%] xl:opacity-100 rightBoy sm:opacity-15">
+      <div className="absolute max-sm:hidden end-0 lg:top-[29%] top-[13%] right-[3%] xl:opacity-100 heroMainText sm:opacity-15">
         <img src={helloRightBoy} alt="helloRightBoy" width={324} />
       </div>
       <div className="xl:pt-[139px] container max-w-[1180px] pt-20 lg:pb-[198px] pb-11 relative z-10">
@@ -86,7 +60,7 @@ const HerbertHero = () => {
               with ease
             </h1>
             <PrimaryParagraph
-              className="sm:pb-10 pb-8 heroMainPara"
+              className="sm:pb-10 pb-8 heroMainText"
               text="Herbert Visa: Your AI-powered assistant for German visa and
                 immigration processes"
             />

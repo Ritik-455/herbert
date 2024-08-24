@@ -53,7 +53,7 @@ const Faq = () => {
         </div>
         <div className='row flex-wrap'>
           {FAQ_CONTENT.map((obj, index) => (
-            <div className="lg:col-6 px-5 w-full sm:mb-6 mb-4 accord_items" key={index}>
+            <div className="lg:col-6 px-5 w-full sm:mb-6 mb-4 accord_items bg-white" key={index}>
               <div
                 className={`max-lg:h-full rounded-md transition-all duration-300 ease-in-out ${activeIndex === index ? 'shadow-accordionShadow' : 'border border-[#00000029]'
                   }`}

@@ -23,17 +23,9 @@ const Team = () => {
         animation: ol,
         toggleActions: 'play',
       });
-      ol.from(".teamHeading", {
+      ol.from(".teamAnimation", {
         scale: 0,
-      })
-      ol.from(".posTeamImg", {
-        scale: 0,
-      })
-      ol.from(".teamPara", {
-        scale: 0,
-      })
-      ol.from(".listItems", {
-        scale: 0,
+        stagger: 0.5,
       })
     })
     return () => tx.revert();
@@ -50,18 +42,18 @@ const Team = () => {
       <div className='absolute pointer-events-none opacity-100 lg:max-w-[630px] md:max-w-[400px] max-w-[150px] md:h-[570px] h-[470px] -top-12 -left-16 2xl:hidden'>
         <img src={leftTeamVector} alt="bottom left vector" className='w-full h-full' />
       </div>
-      <div className='absolute pointer-events-none lg:max-w-[701px] md:max-w-[630px] max-w-[500px] lg:h-[602px] h-auto right-0 -translate-y-1/2 top-1/2 z-20 pointer-event-none max-lg:opacity-30 sm:flex hidden posTeamImg'>
+      <div className='absolute pointer-events-none lg:max-w-[701px] md:max-w-[630px] max-w-[500px] lg:h-[602px] h-auto right-0 -translate-y-1/2 top-1/2 z-20 pointer-event-none max-lg:opacity-30 sm:flex hidden teamAnimation'>
         <img src={teamPosImg} alt="painting of some people" className='w-full h-full' />
       </div>
       <div className='container max-w-[1180px] flex items-start justify-start flex-col relative z-20'>
-        <PrimaryHeading text="Team " LeadingText=" Resources" className="teamHeading">
+        <PrimaryHeading text="Team " LeadingText=" Resources" className="teamAnimation">
           <span className='text-orange'>&</span>
         </PrimaryHeading>
-        <PrimaryParagraph text="Lorem ipsum dolor sit amet consectetur. Tellus ipsum semper eget ornare justo netus proin lacus sed. Vulputate eget lectus vitae iaculis rhoncus" className="md:max-w-[463px] sm:mt-4 mt-[14px] teamPara"></PrimaryParagraph>
+        <PrimaryParagraph text="Lorem ipsum dolor sit amet consectetur. Tellus ipsum semper eget ornare justo netus proin lacus sed. Vulputate eget lectus vitae iaculis rhoncus" className="md:max-w-[463px] sm:mt-4 mt-[14px] teamAnimation"></PrimaryParagraph>
         <div className='max-w-[261px] min-h-[305px] sm:hidden flex mb-4 mt-8'>
           <img src={greetingPerson} alt="person giving greeting" className='w-full h-full' />
         </div>
-        <ul style={{ listStyleType: 'unset' }} className='ps-6 pt-4 listItems'>
+        <ul style={{ listStyleType: 'unset' }} className='ps-6 pt-4 teamAnimation'>
           <li>Single entrepreneur (yourself)</li>
           <li>Outsourced development to freelancers</li>
           <li>Budget: $15,000</li>

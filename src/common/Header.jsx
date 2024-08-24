@@ -56,7 +56,7 @@ const Header = () => {
             <a
               href={obj.url}
               key={index}
-              className={`leading-6 navLinks text-grey relative after:absolute decoration-1 after:h-[3px] after:w-0 hover:after:w-[50%] after:bottom-0 after:left-[25%] after:bg-dark_black after:rounded-xl transition duration-300 after:transition-all after:duration-300 ease-linear hover:text-dark_black ${index === 0 || index === 1 ? "after:w-[327px] after:h-px after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-6 after:bg-[#00000029]" : ""}`}
+              className={`leading-6 navLinks text-grey relative after:absolute decoration-1 after:h-[3px] after:w-0 hover:after:w-[50%] after:bottom-0 after:left-[25%] after:bg-dark_black after:rounded-xl transition duration-300 after:transition-all after:duration-300 ease-linear hover:text-dark_black ${index === 0 || index === 1 ? "max-lg:after:w-[327px] max-lg:after:h-px max-lg:after:absolute max-lg:after:left-1/2 max-lg:after:-translate-x-1/2 max-lg:after:-bottom-6 max-lg:after:bg-[#00000029]" : ""}`}
             >
               {obj.navlink}
             </a>

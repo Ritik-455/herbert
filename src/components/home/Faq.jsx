@@ -20,7 +20,7 @@ const Faq = () => {
         start: "-50% 30%",
         end: "bottom 40%",
         animation: tl,
-        markers: true,
+        markers: false,
         pin: false,
         toggleActions: "play",
       });

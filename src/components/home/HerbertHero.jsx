@@ -46,16 +46,16 @@ const HerbertHero = () => {
   return (
     <div className="bg-heroBgImg bg-full relative max-w-[1920px] mx-auto">
       <Header />
-      <div className="absolute lg:top-[23%] top-[10%] left-[9%] max-sm:hidden xl:opacity-100 sm:opacity-15 heroMainText">
+      <div className="absolute lg:top-[16%] top-[10%] left-[7%] max-sm:hidden xl:opacity-100 sm:opacity-15 heroMainText">
         <img src={helloLeftBoy} alt="helloLeftBoy" width={329} />
       </div>
-      <div className="absolute max-sm:hidden end-0 lg:top-[29%] top-[13%] right-[3%] xl:opacity-100 heroMainText sm:opacity-15">
+      <div className="absolute max-sm:hidden end-0 lg:top-[23%] top-[13%] right-[3%] xl:opacity-100 heroMainText sm:opacity-15">
         <img src={helloRightBoy} alt="helloRightBoy" width={324} />
       </div>
-      <div className="xl:pt-[139px] container max-w-[1180px] pt-20 lg:pb-[198px] pb-11 relative z-10">
-        <div className="mb-20">
+      <div className="xl:pt-[139px] container max-w-[1180px] pt-20 lg:pb-[198px] pb-20 relative z-10">
+        <div className="max-sm:mb-20">
           <div className="mx-auto text-center">
-            <h1 className="font-Rubik sm:text-3lg text-3xl font-semibold sm:leading-lg text-dark_black max-w-[716px] text-center sm:pb-4 pb-[14px] mx-auto heroMainText">
+            <h1 className="font-Rubik md:text-3lg sm:text-5xl text-3xl font-semibold sm:leading-lg text-dark_black max-w-[716px] text-center sm:pb-4 pb-[14px] mx-auto heroMainText">
               Navigating <span className="text-orange font-Rubik">German Bureaucracy</span>{" "}
               with ease
             </h1>
@@ -64,7 +64,9 @@ const HerbertHero = () => {
               text="Herbert Visa: Your AI-powered assistant for German visa and
                 immigration processes"
             />
-            <PrimaryButton BtnText="Start your conversation with Herbert" className="max-sm:text-sm cmnBtn" />
+            <div className="heroCardAnimation">
+              <PrimaryButton BtnText="Start your conversation with Herbert" className="max-sm:text-sm" />
+            </div>
           </div>
         </div>
         <div className="flex items-center justify-center sm:hidden">
@@ -82,8 +84,8 @@ const HerbertHero = () => {
       <div className="container max-w-[1180px] relative z-20 heroCardSection">
         <div className="row items-center justify-center">
           {CARD_DATA.map((obj, index) =>
-            <div className="lg:col-4 md:min-h-[238px] h-auto mb-3 md:col-6 w-full flex items-center justify-center px-3 heroCardAnimation">
-              <div className="lg:max-w-[364px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-in-out duration-300 bg-white py-5 flex items-center justify-center flex-col hover:shadow-cardHoverShadow hover:border-none hover:min-h-[238px]">
+            <div className="lg:col-4 md:min-h-[238px] h-auto mb-3 md:col-6 w-full flex items-center justify-center px-3 heroCardAnimation" key={index}>
+              <div className="lg:max-w-[364px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-300 bg-white py-5 flex items-center justify-center flex-col hover:shadow-cardHoverShadow hover:border-none hover:min-h-[238px]">
                 <div>
                   <img src={obj.img} alt="images of diff types" />
                 </div>

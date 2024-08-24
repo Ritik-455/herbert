@@ -87,7 +87,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:block absolute left-0 2xl:left-[14%] bottom-[-17%] z-[-1]"><img src={bottomLayer} alt="bottomLayer" className='w-full' /></div>
+        <div className="hidden lg:block absolute left-0 2xl:left-[14%] bottom-0 z-[-1]"><img src={bottomLayer} alt="bottomLayer" className='w-full' /></div>
       </div>
       <div className="hidden lg:block absolute right-0 top-[8%] z-[-1]"><img src={topLayer} alt="topLayer" /></div>
       <div className="hidden lg:block absolute left-[-1%] top-[25%] z-[-1]"><img src={leftLayer} alt="leftLayer" /></div>

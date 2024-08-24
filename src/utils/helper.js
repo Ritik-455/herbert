@@ -4,15 +4,15 @@ import featuresThree from "../assets/images/home/svg/features-numb-3.svg";
 import featuresFour from "../assets/images/home/svg/features-numb-4.svg";
 import featuresFive from "../assets/images/home/svg/features-numb-5.svg";
 import featuresSix from "../assets/images/home/svg/features-numb-6.svg";
-import facebook from "../assets/images/home/svg/Facebook.svg";
-import instagram from "../assets/images/home/svg/Instagram.svg";
-import linkedIn from "../assets/images/home/svg/LinkedIn.svg";
-import setting from "../assets/images/about/svg/setting.svg";
-import request from "../assets/images/about/svg/request.svg";
-import timer from "../assets/images/about/svg/timer.svg";
-import cardFirst from "../assets/images/home/svg/card-img-first.svg";
-import cardSecond from "../assets/images/home/svg/card-img-second.svg";
-import cardThird from "../assets/images/home/svg/card-img-third.svg";
+import facebook from "../assets/images/home/svg/facebook.svg";
+import instagram from "../assets/images/home/svg/instagram.svg";
+import linkedIn from "../assets/images/home/svg/linkedIn.svg";
+import setting from '../assets/images/about/svg/setting.svg'
+import request from '../assets/images/about/svg/request.svg'
+import timer from '../assets/images/about/svg/timer.svg'
+import cardFirst from '../assets/images/home/svg/card-img-first.svg'
+import cardSecond from '../assets/images/home/svg/card-img-second.svg'
+import cardThird from '../assets/images/home/svg/card-img-third.svg'
 
 export const FEATURES_DATA = [
   {
@@ -65,7 +65,7 @@ export const PLANS_DATA = [
 ];
 export const NAV_LINKS_LIST = [
   { navlink: "Herbert", url: "/" },
-  { navlink: "Sources", url: "#blog" },
+  { navlink: "Sources", url: "/sources" },
   { navlink: "Our Vision", url: "#vision" },
 ];
 

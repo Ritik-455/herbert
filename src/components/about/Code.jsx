@@ -1,10 +1,29 @@
 import PrimaryHeading from '../../common/PrimaryHeading'
 import PrimaryParagraph from '../../common/PrimaryParagraph'
 import codePosImg from '../../assets/images/about/png/code-sec-col.png'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLayoutEffect } from 'react'
+gsap.registerPlugin(ScrollTrigger);
 
 const Code = () => {
+
+  useLayoutEffect(() => {
+    const cx = gsap.context(() => {
+      let cl = gsap.timeline();
+      ScrollTrigger.create({
+        trigger: ".codeSection",
+        start: "-30% 50%",
+        end: "bottom 100%",
+        animation: cl,
+        toggleActions: 'play',
+      });    
+    })
+    return () => cx.revert();
+  }, [])
+
   return (
-    <div className='relative max-w-[1920px] mx-auto lg:py-60 sm:py-20 py-16 teamSection bg-[#FFF8F2]'>
+    <div className='relative max-w-[1920px] mx-auto lg:py-60 sm:py-20 py-16 codeSection bg-[#FFF8F2]'>
       <div className='lg:absolute relative pointer-events-none xl:max-w-[701px] lg:max-w-[500px] max-w-[490px] xl:h-[602px] max-lg:left-1/2 max-lg:-translate-x-1/2 h-auto left-0 lg:-translate-y-1/2 lg:top-1/2 z-20 pointer-event-none posTeamImg'>
         <img src={codePosImg} alt="painting of some people" className='w-full h-full' />
       </div>

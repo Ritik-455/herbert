@@ -7,12 +7,12 @@ import featuresSix from "../assets/images/home/svg/features-numb-6.svg";
 import facebook from "../assets/images/home/svg/Facebook.svg";
 import instagram from "../assets/images/home/svg/Instagram.svg";
 import linkedIn from "../assets/images/home/svg/LinkedIn.svg";
-import setting from '../assets/images/about/svg/setting.svg'
-import request from '../assets/images/about/svg/request.svg'
-import timer from '../assets/images/about/svg/timer.svg'
-import cardFirst from '../assets/images/home/svg/card-img-first.svg'
-import cardSecond from '../assets/images/home/svg/card-img-second.svg'
-import cardThird from '../assets/images/home/svg/card-img-third.svg'
+import setting from "../assets/images/about/svg/setting.svg";
+import request from "../assets/images/about/svg/request.svg";
+import timer from "../assets/images/about/svg/timer.svg";
+import cardFirst from "../assets/images/home/svg/card-img-first.svg";
+import cardSecond from "../assets/images/home/svg/card-img-second.svg";
+import cardThird from "../assets/images/home/svg/card-img-third.svg";
 
 export const FEATURES_DATA = [
   {
@@ -57,7 +57,7 @@ export const PLANS_DATA = [
   },
   {
     heading: "$20/mo",
-    para: "Ideal for newcomers! Get quick and reliable answers to your basic questions about German immigration policies. Perfect for a brief introduction without long-term commitment.",
+    para: "Have Herbert accompany you throughout your entire visa application journey. With extensive message credits, you can ask questions whenever you need, ensuring a smooth and informed experience.",
     message: "50 messages",
     upgrade: "Upgrade to Premium",
     plan: "Premium",
@@ -149,35 +149,35 @@ export const VISA_DATA = [
 export const REGULATIONS_DATA = [
   {
     img: featuresOne,
-    para: "Work permit requirements"
+    para: "Work permit requirements",
   },
   {
     img: featuresTwo,
-    para: "Job-seeking visas"
+    para: "Job-seeking visas",
   },
   {
     img: featuresThree,
-    para: "Self-employment regulations"
+    para: "Self-employment regulations",
   },
   {
     img: featuresFour,
-    para: "Specific provisions for various professional groups"
-  }
-]
+    para: "Specific provisions for various professional groups",
+  },
+];
 export const VISA_CODE_DATA = [
   {
     img: setting,
-    para: "Visa application processes"
+    para: "Visa application processes",
   },
   {
     img: request,
-    para: "Required documentation"
+    para: "Required documentation",
   },
   {
     img: timer,
-    para: "Visa fees and processing times"
+    para: "Visa fees and processing times",
   },
-]
+];
 export const CARD_DATA = [
   {
     img: cardFirst,
@@ -193,5 +193,5 @@ export const CARD_DATA = [
     img: cardThird,
     mainText: "Language Assistance",
     content: "German language skills assessment",
-  }
-]
+  },
+];

@@ -32,7 +32,7 @@ const HerbertHero = () => {
         trigger: ".heroCardSection",
         start: "top 90%",
         end: "bottom 100%",
-        markers: true,
+        markers: false,
       })
       hl.from(".heroCardAnimation", {
         scale: 0,

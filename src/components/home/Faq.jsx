@@ -17,10 +17,10 @@ const Faq = () => {
       let tl = gsap.timeline();
       ScrollTrigger.create({
         trigger: ".faq_animation",
-        start: "top 10%",
+        start: "-50% 30%",
         end: "bottom 40%",
         animation: tl,
-        markers: false,
+        markers: true,
         pin: false,
         toggleActions: "play",
       });

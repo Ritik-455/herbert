@@ -6,20 +6,24 @@ import PrimaryButton from "./PrimaryButton";
 import { gsap } from "gsap";
 
 const Header = () => {
-
   useEffect(() => {
     let tl = gsap.timeline();
-    tl.fromTo(".herbertLogo", {
-      y: -200,
-    },
+    tl.fromTo(
+      ".herbertLogo",
+      {
+        y: -200,
+      },
       {
         y: 0,
         duration: 1,
-      });
+      }
+    );
 
-    tl.fromTo(".navLinks", {
-      y: -200,
-    },
+    tl.fromTo(
+      ".navLinks",
+      {
+        y: -200,
+      },
       {
         y: 0,
         stagger: 0.3,
@@ -50,19 +54,30 @@ const Header = () => {
           </span>
         </div>
         <div
-          className={`${nav && "max-lg:left-[-100%]"} ${!nav && "max-lg:start-0"
-            } flex items-center gap-11 z-40 max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 max-lg:bg-white transition-all duration-300 ease-linear`}
+          className={`${nav && "max-lg:left-[-100%]"} ${
+            !nav && "max-lg:start-0"
+          } flex items-center gap-11 z-40 max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 max-lg:bg-white transition-all duration-300 ease-linear`}
         >
           {NAV_LINKS_LIST.map((obj, index) => (
             <a
               href={obj.url}
               key={index}
-              className={`leading-6 navLinks ${path === obj.url && "after:absolute decoration-1 after:h-[3px] after:w-[50%] after:bottom-0 after:left-[25%] after:bg-dark_black after:rounded-xl !text-black"} text-grey relative transition duration-300 after:transition-all after:duration-300 ease-linear hover:text-dark_black ${index === 0 || index === 1 ? "max-lg:after:w-[327px] max-lg:after:h-px max-lg:after:absolute max-lg:after:left-1/2 max-lg:after:-translate-x-1/2 max-lg:after:-bottom-6 max-lg:after:bg-[#00000029]" : ""}`}
+              className={`leading-6 navLinks ${
+                path === obj.url &&
+                "after:absolute decoration-1 after:h-[3px] after:w-[31px] after:-bottom-[2px] after:left-[25%] after:bg-dark_black after:rounded-xl !text-black"
+              } text-grey relative transition duration-300 after:transition-all after:duration-300 ease-linear hover:text-dark_black ${
+                index === 0 || index === 1
+                  ? "max-lg:after:w-[327px] max-lg:after:h-px max-lg:after:absolute  max-lg:after:left-1/2 max-lg:after:-translate-x-1/2 max-lg:after:-bottom-6 max-lg:after:bg-[#00000029]"
+                  : ""
+              }`}
             >
               {obj.navlink}
             </a>
           ))}
-          <PrimaryButton BtnText="Start your conversation with Herbert" className="lg:hidden" />
+          <PrimaryButton
+            BtnText="Start your conversation with Herbert"
+            className="lg:hidden"
+          />
         </div>
       </div>
     </div>

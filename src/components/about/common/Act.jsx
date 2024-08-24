@@ -22,7 +22,7 @@ const Act = ({ sectionData }) => {
             <div>
               <PrimaryParagraph
                 text={value.aboutListItems}
-                className="mb-2 max-sm:text-sm leading-5 sm:leading-6"
+                className="lg:mb-4 sm:mb-3 mb-4 max-sm:text-sm leading-5 sm:leading-6"
               />
               {sectionData !== VISA_DATA && (
                 <div className="md:max-w-[392px] sm:max-w-[290px] max-w-[261px] w-full lg:h-[457px] h-auto max-sm:h-[305] lg:ml-12 md:hidden my-8 mx-auto">
@@ -39,15 +39,22 @@ const Act = ({ sectionData }) => {
                 <PrimaryParagraph
                   key={index}
                   className={`${
-                    index !== 0 && "my-1"
-                  } after:w-[5px] after:h-[5px] after:!bg-grey after:rounded-full after:absolute after:left-2 after:top-1/2 after:-translate-y-1/2 relative ps-6 max-sm:text-sm leading-5`}
+                    index !== 0 &&
+                    index !== value.listItems.length - 1 &&
+                    "sm:my-1 my-2"
+                  } after:w-[5px] after:h-[5px] after:!bg-grey after:rounded-full after:absolute after:left-2  ${
+                    index === value.listItems.length - 1 &&
+                    sectionData === VISA_DATA
+                      ? "lg:after:top-1/2 md:after:top-[28%] max-sm:after:top-[35%]"
+                      : "after:top-1/2"
+                  } after:top-1/2 after:-translate-y-1/2 relative ps-6 max-sm:text-sm leading-5`}
                   text={listItem}
                 />
               ))}
               {sectionData !== VISA_DATA && (
                 <PrimaryParagraph
                   text={value.about}
-                  className="mt-2 max-sm:text-sm leading-5 sm:leading-6"
+                  className="lg:mt-4 mt-3 max-sm:text-sm leading-5 sm:leading-6"
                 />
               )}
             </div>

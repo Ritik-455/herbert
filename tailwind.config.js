@@ -28,7 +28,7 @@ module.exports = {
           "linear-gradient(241.09deg, rgba(255, 76, 36, 0.15) -34.32%, rgba(255, 227, 108, 0.15) 109.3%)",
         bgLinearGradient: "linear-gradient(to bottom, white 70%, #FFF8F2 30%)",
         plans: "url(./assets/images/home/png/plans-bg-img.png)",
-        heroBgImg: "url(./assets/images/home/webp/Hero-bg-img.webp)",
+        heroBgImg: "url(./assets/images/home/webp/hero-bg-img.webp)",
         sources_hero: "url(./assets/images/about/webp/sources-hero.webp)",
         visa_code:"url(./assets/images/about/png/visa-bg-img.png)",
       },

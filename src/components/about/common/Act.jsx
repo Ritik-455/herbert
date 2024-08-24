@@ -39,9 +39,9 @@ const Act = ({ sectionData }) => {
                 <PrimaryParagraph
                   key={index}
                   className={`${
-                    index !== 0 && index !== value.listItems.length - 1
-                      ? "sm:my-1 my-2"
-                      : ""
+                    index !== 0 &&
+                    index !== value.listItems.length - 1 &&
+                    "sm:my-1 my-2"
                   } after:w-[5px] after:h-[5px] after:!bg-grey after:rounded-full after:absolute after:left-2  ${
                     index === value.listItems.length - 1 &&
                     sectionData === VISA_DATA

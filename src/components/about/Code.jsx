@@ -17,7 +17,7 @@ const Code = () => {
         end: "bottom 100%",
         animation: cl,
         toggleActions: 'play',
-        markers: true,
+        markers: false,
       });
       cl.from(".crossHeading", {
         scale: 0,

@@ -1,10 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import navLogoImg from "../assets/images/home/webp/nav-logo.webp";
 import { NAV_LINKS_LIST } from "../utils/helper";
 import { NavCross, NavLine } from "./Icon";
 import PrimaryButton from "./PrimaryButton";
+import { gsap } from "gsap";
 
 const Header = () => {
+
+  useEffect(() => {
+    let tl = gsap.timeline();
+    tl.fromTo(".herbertLogo", {
+      y: -200,
+    },
+      {
+        y: 0,
+        duration: 1,
+      });
+
+    tl.fromTo(".navLinks", {
+      y: -200,
+    },
+      {
+        y: 0,
+        stagger: 0.3,
+      }
+    );
+  }, []);
+
   const [nav, setNav] = useState(true);
   const handleNavbar = () => {
     setNav(!nav);
@@ -15,7 +37,7 @@ const Header = () => {
   return (
     <div className="container max-w-[1180px]">
       <div className="h-[100px] flex items-center justify-between">
-        <a href="/">
+        <a href="/" className="herbertLogo z-50">
           <img className="" src={navLogoImg} alt="navLogoImg" width={180} />
         </a>
         <div
@@ -34,7 +56,7 @@ const Header = () => {
             <a
               href={obj.url}
               key={index}
-              className="leading-6 text-grey relative after:absolute decoration-1 after:h-[3px] after:w-0 hover:after:w-[50%] after:bottom-0 after:left-[25%] after:bg-dark_black after:rounded-xl transition duration-300 after:transition-all after:duration-300 ease-linear hover:text-dark_black"
+              className={`leading-6 navLinks text-grey relative after:absolute decoration-1 after:h-[3px] after:w-0 hover:after:w-[50%] after:bottom-0 after:left-[25%] after:bg-dark_black after:rounded-xl transition duration-300 after:transition-all after:duration-300 ease-linear hover:text-dark_black ${index === 0 || index === 1 ? "max-lg:after:w-[327px] max-lg:after:h-px max-lg:after:absolute max-lg:after:left-1/2 max-lg:after:-translate-x-1/2 max-lg:after:-bottom-6 max-lg:after:bg-[#00000029]" : ""}`}
             >
               {obj.navlink}
             </a>

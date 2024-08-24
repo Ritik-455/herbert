@@ -42,10 +42,10 @@ const Help = () => {
                 </PrimaryHeading>
                 <PrimaryParagraph text="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam." className="max-w-[528px] text-center text-white sm:mt-4 mt-3 sm:mb-11 mb-8 subContent" />
                 <div className="flex items-center justify-center sm:gap-4 gap-3 sm:flex-nowrap flex-wrap">
-                    <div className="headingtext">
+                    <div className="headingtext max-sm:w-full">
                         <PrimaryButton BtnText="Start your conversation" className="!text-light_orange bg-white max-sm:w-full firstBtn hover:!bg-transparent hover:!text-white hover:!border hover:!border-white" />
                     </div>
-                    <div className="subContent">
+                    <div className="subContent max-sm:w-full">
                         <PrimaryButton BtnText="Learn More" className="border !border-white max-sm:w-full secondBtn" />
                     </div>
                 </div>

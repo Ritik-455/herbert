@@ -33,10 +33,10 @@ const Help = () => {
         });
         return () => aot.revert();
     }, [])
-
+    let path = window.location.pathname;
     return (
-        <div className="px-6 bg-bgLinearGradient faq_animatio overflow-hidden max-w-[1920px] mx-auto overflow-hidden">
-            <div className="container max-w-[1180px] lg:mt-[120px] sm:mt-20 mt-16 bg-light_orange sm:py-16 py-5 rounded-xl flex items-center justify-center flex-col main_box">
+        <div className="px-6 bg-bgLinearGradient faq_animatio overflow-hidden max-w-[1920px] mx-auto">
+            <div className={`container max-w-[1180px] ${path === "/sources" ? "mt-0" : "lg:mt-[120px] sm:mt-20 mt-16"} bg-light_orange sm:py-16 py-5 rounded-xl flex items-center justify-center flex-col main_box`}>
                 <PrimaryHeading className="max-w-[632px] text-center headingtext">
                     <span className="text-white">Need Help in Your Visa? Ask Herbert Now!</span>
                 </PrimaryHeading>

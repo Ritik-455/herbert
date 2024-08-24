@@ -36,7 +36,7 @@ const Team = () => {
       <div className='absolute opacity-10 lg:-top-36 md:-top-28 -top-20 right-0 z-0 max-sm:max-w-[150px] lg:max-w-[630px] max-sm:h-[470px] sm:max-w-[400px] pointer-events-none'>
         <img src={teamTopRightVector} alt="top right vector" className='w-full h-full' />
       </div>
-      <div className='absolute pointer-events-none opacity-10 z-10 lg:max-w-[630px] md:max-w-[400px] max-w-[150px] md:h-[570px] h-[470px] bottom-0 left-0'>
+      <div className='absolute pointer-events-none opacity-5 z-10 lg:max-w-[630px] md:max-w-[400px] max-w-[150px] md:h-[570px] h-[470px] bottom-0 left-0'>
         <img src={teamBottomLeftVector} alt="bottom left vector" className='w-full h-full' />
       </div>
       <div className='absolute pointer-events-none opacity-100 lg:max-w-[630px] md:max-w-[400px] max-w-[150px] md:h-[570px] h-[470px] -top-12 -left-16 2xl:hidden'>

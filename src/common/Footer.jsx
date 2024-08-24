@@ -20,7 +20,7 @@ const Footer = () => {
                   {obj.links ? (
                     <ul className='gap-2 flex flex-col'>
                       {obj.links.map((val, index) => (
-                        <li key={index}>
+                        <li key={index} className='hover:opacity-50 ease-linear duration-300'>
                           <a href="/" className='font-normal text-grey'>{val}</a>
                         </li>
                       ))}
@@ -28,7 +28,7 @@ const Footer = () => {
                   ) : obj.socialLinks ? (
                     <ul className='flex items-center justify-start gap-3'>
                       {obj.socialLinks.map((val, index) => (
-                        <li key={index} className='size-9 bg-orange_gradient rounded-full flex items-center justify-center'>
+                        <li key={index} className='size-9 bg-orange_gradient rounded-full flex items-center justify-center hover:-translate-y-2 ease-linear duration-300 cursor-pointer'>
                           <a href="/">
                             <img src={val} alt="social links" />
                           </a>

@@ -80,7 +80,7 @@ export const Regulation = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[12 %] md:-bottom-6 2xl:right-[7%]"><img src={bottomLayer} alt="bottomLayer" className='w-full' /></div>
+      <div className="absolute bottom-[12%] md:-bottom-6 2xl:right-[7%]"><img src={bottomLayer} alt="bottomLayer" className='w-full' /></div>
     </div>
   )
 }

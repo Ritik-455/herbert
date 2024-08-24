@@ -84,7 +84,7 @@ const HerbertHero = () => {
       <div className="container max-w-[1180px] relative z-20 heroCardSection">
         <div className="row items-center justify-center">
           {CARD_DATA.map((obj, index) =>
-            <div className="lg:col-4 md:min-h-[238px] h-auto mb-3 md:col-6 w-full flex items-center justify-center px-3 heroCardAnimation">
+            <div className="lg:col-4 md:min-h-[238px] h-auto mb-3 md:col-6 w-full flex items-center justify-center px-3 heroCardAnimation" key={index}>
               <div className="lg:max-w-[364px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-500 bg-white py-5 flex items-center justify-center flex-col hover:shadow-cardHoverShadow hover:border-none hover:min-h-[238px]">
                 <div>
                   <img src={obj.img} alt="images of diff types" />

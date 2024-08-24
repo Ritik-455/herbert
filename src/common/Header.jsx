@@ -39,7 +39,7 @@ const Header = () => {
     <div className="container max-w-[1180px]">
       <div className="h-[100px] flex items-center justify-between">
         <a href="/" className="herbertLogo z-50">
-          <img className="" src={navLogoImg} alt="navLogoImg" width={180} />
+          <img className="sm:w-[180px] w-[117px]" src={navLogoImg} alt="navLogoImg" />
         </a>
         <div
           className="flex flex-col lg:hidden justify-between z-50 cursor-pointer transition-all ease-linear duration-300"

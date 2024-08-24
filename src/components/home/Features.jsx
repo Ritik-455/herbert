@@ -67,7 +67,7 @@ const Features = () => {
           </div>
         </div>
         <div className="">
-          <div className="lg:hidden flex justify-center"><img src={middleMen} alt="middleMen" className='max-w-[324px] w-100 h-[452px] mt-6 pointer-events-none middleImg' /></div>
+          <div className="lg:hidden flex justify-center"><img src={middleMen} alt="middleMen" className='max-w-[324px] w-100 h-[382px] mt-6 pointer-events-none middleImg' /></div>
           <div className="flex lg:hidden justify-between">
             <div className="">
               {limitedFeatures.map((data, index) => (

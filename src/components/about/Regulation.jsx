@@ -60,7 +60,7 @@ export const Regulation = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-center mt-6"><img src={regulationMiddle} alt="regulationMiddle" className='max-w-[259px] md:hidden centerImg' /></div>
+        <div className="flex justify-center mt-6 md:hidden"><img src={regulationMiddle} alt="regulationMiddle" className='max-w-[259px] centerImg' /></div>
         <div className="flex justify-between sm:justify-center">
           <div className="md:hidden">
             {RegulationData1.map((data, index) => (
@@ -80,7 +80,7 @@ export const Regulation = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[12 %] md:-bottom-6 2xl:right-[7%]"><img src={bottomLayer} alt="bottomLayer" className='w-full' /></div>
+      <div className="absolute bottom-[12%] md:-bottom-6 2xl:right-[7%]"><img src={bottomLayer} alt="bottomLayer" className='w-full' /></div>
     </div>
   )
 }

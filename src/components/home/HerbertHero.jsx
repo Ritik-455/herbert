@@ -53,10 +53,10 @@ const HerbertHero = () => {
       <div className="absolute max-sm:hidden end-0 lg:top-[23%] top-[13%] right-[3%] xl:opacity-100 heroMainText sm:opacity-15">
         <img src={helloRightBoy} alt="helloRightBoy" width={324} />
       </div>
-      <div className="xl:pt-[139px] container max-w-[1180px] pt-20 lg:pb-[198px] pb-11 relative z-10">
+      <div className="xl:pt-[139px] container max-w-[1180px] pt-20 lg:pb-[198px] pb-20 relative z-10">
         <div className="max-sm:mb-20">
           <div className="mx-auto text-center">
-            <h1 className="font-Rubik sm:text-3lg text-3xl font-semibold sm:leading-lg text-dark_black max-w-[716px] text-center sm:pb-4 pb-[14px] mx-auto heroMainText">
+            <h1 className="font-Rubik md:text-3lg sm:text-5xl text-3xl font-semibold sm:leading-lg text-dark_black max-w-[716px] text-center sm:pb-4 pb-[14px] mx-auto heroMainText">
               Navigating{" "}
               <span className="text-orange font-Rubik">German Bureaucracy</span>{" "}
               with ease
@@ -90,10 +90,12 @@ const HerbertHero = () => {
         <div className="row items-center justify-center">
           {CARD_DATA.map((obj, index) => (
             <div
+              className={`lg:col-4 md:min-h-[238px] ${
+                index === 0 || index === 1 ? "max-md:mb-3" : "mb-0"
+              } h-auto md:col-6 w-full flex items-center justify-center px-3 heroCardAnimation`}
               key={index}
-              className={`lg:col-4 md:min-h-[238px] h-auto md:col-6 max-md:mb-3 w-full flex items-center justify-center px-3 heroCardAnimation`}
             >
-              <div className="lg:max-w-[364px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-500 bg-white py-5 flex items-center justify-center flex-col hover:shadow-cardHoverShadow hover:border-none hover:min-h-[238px]">
+              <div className="lg:max-w-[364px] max-sm:max-w-[327px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-300 bg-white py-5 flex items-center justify-center flex-col hover:shadow-cardHoverShadow hover:border-none hover:min-h-[238px]">
                 <div>
                   <img src={obj.img} alt="images of diff types" />
                 </div>

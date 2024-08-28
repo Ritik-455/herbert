@@ -95,7 +95,7 @@ const HerbertHero = () => {
                   <img src={obj.img} alt="images of diff types" />
                 </div>
                 <p className="font-medium sm:text-xl text-base max-sm:leading-[19px] sm:pb-3 pb-2 pt-4">{obj.mainText}</p>
-                <p className="font-normal text-grey text-center max-w-[192px] max-sm:text-sm">{obj.content}</p>
+                <p className="font-normal text-grey text-center md:max-w-[192px] max-sm:text-sm">{obj.content}</p>
               </div>
             </div>
           ))}

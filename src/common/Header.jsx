@@ -75,6 +75,7 @@ const Header = () => {
             BtnText="Start your conversation with Herbert"
             className="lg:hidden"
           />
+          
         </div>
       </div>
     </div>

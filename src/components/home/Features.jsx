@@ -23,9 +23,10 @@ const Features = () => {
         toggleActions: "play",
       });
       imageAnimation.from('.middleImg', { opacity: 0, scale: 0 });
-      imageAnimation.from(".card_animation", {
-        x: -1000,
-      })
+      imageAnimation.from
+        (".card_animation", {
+          x: -1000,
+        })
       imageAnimation.from(".card_animation2", {
         x: 1000,
       })

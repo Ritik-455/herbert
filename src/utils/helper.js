@@ -4,7 +4,7 @@ import featuresThree from "../assets/images/home/svg/features-numb-3.svg";
 import featuresFour from "../assets/images/home/svg/features-numb-4.svg";
 import featuresFive from "../assets/images/home/svg/features-numb-5.svg";
 import featuresSix from "../assets/images/home/svg/features-numb-6.svg";
-import facebook from "../assets/images/home/svg/facebook.svg";
+import facebook from "../assets/images/home/svg/facebook2.svg";
 import instagram from "../assets/images/home/svg/instagram.svg";
 import linkedIn from "../assets/images/home/svg/linkedIn.svg";
 import setting from '../assets/images/about/svg/setting.svg'

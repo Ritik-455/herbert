@@ -83,7 +83,7 @@ export const FOOTER_DATA = [
     socialLinks: [facebook, instagram, linkedIn],
   },
 ];
-
+ 
 export const FAQ_CONTENT = [
   {
     mainText: "What is Herbert?",

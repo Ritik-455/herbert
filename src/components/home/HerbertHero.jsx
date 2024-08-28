@@ -66,7 +66,7 @@ const HerbertHero = () => {
               text="Herbert Visa: Your AI-powered assistant for German visa and
                 immigration processes"
             />
-            <div className="heroCardAnimation">
+            <div className="heroCardAnimation flex justify-center">
               <PrimaryButton
                 BtnText="Start your conversation with Herbert"
                 className="max-sm:text-sm"

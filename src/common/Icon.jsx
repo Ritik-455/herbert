@@ -84,3 +84,32 @@ export const NavLine = () => {
     </svg>
   );
 };
+export const BackToTopIcon = () => {
+  return (
+    <svg
+      className=" size-9 md:size-auto"
+      width="38"
+      height="37"
+      viewBox="0 0 38 37"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clipPath="url(#clip0_36698_752)">
+        <path
+          d="M20.5103 18.4993V30.5827H17.4894V18.4993H6.9165L18.9998 6.41602L31.0832 18.4993H20.5103Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_36698_752">
+          <rect
+            width="36.25"
+            height="36.25"
+            fill="white"
+            transform="translate(0.875 0.375)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};

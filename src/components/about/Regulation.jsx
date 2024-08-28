@@ -65,7 +65,7 @@ export const Regulation = () => {
           <div className="md:hidden">
             {RegulationData1.map((data, index) => (
               <div className={`${index === 0 ? "mt-16" : "mt-14"} max-w-[151px] w-full`} key={index}>
-                <img src={data.img} alt="count" />
+                <img src={data.img} alt="count" className='size-7 sm:size-9' />
                 <p className='font-medium text-md text-dark_black mt-4'>{data.para}</p>
               </div>
             ))}
@@ -73,7 +73,7 @@ export const Regulation = () => {
           <div className="md:hidden">
             {RegulationData2.map((data, index) => (
               <div className={`${index === 0 ? "mt-16" : "mt-14"} max-w-[151px] w-full`} key={index}>
-                <img src={data.img} alt="count" />
+                <img src={data.img} alt="count" className='size-7 sm:size-9' />
                 <p className='font-medium text-md text-dark_black mt-4'>{data.para}</p>
               </div>
             ))}

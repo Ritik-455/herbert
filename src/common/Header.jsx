@@ -37,7 +37,7 @@ const Header = () => {
   let path = window.location.pathname;
   return (
     <div className="container max-w-[1180px]">
-      <div className="h-[100px] flex items-center justify-between">
+      <div className="sm:h-[100px] h-16 flex items-center justify-between">
         <a href="/" className="herbertLogo z-50">
           <img className="sm:w-[180px] w-[117px]" src={navLogoImg} alt="navLogoImg" />
         </a>

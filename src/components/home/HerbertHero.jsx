@@ -70,11 +70,11 @@ const HerbertHero = () => {
           </div>
         </div>
         <div className="flex items-center justify-center sm:hidden">
-          <div className="sm:absolute relative sm:top-[24%] sm:left-[4%] sm:opacity-15 xl:opacity-100 opacity-100 leftBoy">
-            <img src={helloLeftBoy} alt="helloLeftBoy" width={329} />
+          <div className="sm:absolute relative sm:top-[24%] sm:left-[4%] h-[372px] w-[232px] sm:opacity-15 xl:opacity-100 opacity-100 leftBoy">
+            <img src={helloLeftBoy} alt="helloLeftBoy" className="h-full w-full" />
           </div>
-          <div className="sm:absolute relative sm:end-0 sm:top-[32%] sm:right-[3%] sm:opacity-15 xl:opacity-100 opacity-100 rightBoy max-sm:scale-75">
-            <img src={helloRightBoy} alt="helloRightBoy" width={324} />
+          <div className="sm:absolute relative sm:end-0 sm:top-[32%] sm:right-[3%] w-[139px] h-[232px] sm:opacity-15 xl:opacity-100 opacity-100 rightBoy">
+            <img src={helloRightBoy} alt="helloRightBoy" className="w-full h-full object-fill" />
           </div>
         </div>
       </div>
@@ -85,12 +85,12 @@ const HerbertHero = () => {
         <div className="row items-center justify-center">
           {CARD_DATA.map((obj, index) =>
             <div className={`lg:col-4 md:min-h-[238px] ${index === 0 || index === 1 ? "max-md:mb-3" : "mb-0"} h-auto md:col-6 w-full flex items-center justify-center px-3 heroCardAnimation`} key={index}>
-              <div className="lg:max-w-[364px] max-sm:max-w-[327px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-300 bg-white py-5 flex items-center justify-center flex-col hover:shadow-cardHoverShadow hover:border-none hover:min-h-[238px]">
-                <div>
+              <div className="lg:max-w-[364px] max-sm:max-w-[327px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-300 bg-white py-5 flex items-center justify-center flex-col hover:shadow-cardHoverShadow hover:border-none sm:hover:min-h-[238px] hover:min-h-[180px]">
+                <div className="sm:size-14 size-12">
                   <img src={obj.img} alt="images of diff types" />
                 </div>
-                <p className="font-medium text-xl pb-3 pt-4">{obj.mainText}</p>
-                <p className="font-normal text-grey text-center max-w-[192px]">{obj.content}</p>
+                <p className="font-medium sm:text-xl text-base max-sm:leading-[19px] sm:pb-3 pb-2 pt-4">{obj.mainText}</p>
+                <p className="font-normal text-grey text-center max-w-[192px] max-sm:text-sm">{obj.content}</p>
               </div>
             </div>
           )}

@@ -40,7 +40,7 @@ const AboutHero = () => {
       <div className="pt-[72px] xl:pb-[120px] md:pb-[105px] pb-[95px]">
         <div className="container xl:max-w-[1188px] mx-auto">
           <div className="sm:max-w-[807px] max-w-[532px] w-full mx-auto text-center">
-            <h1 className="font-Rubik sm:text-4xl sm:!leading-10 md:text-[42px] lg:text-5xl xl:text-3lg text-[28px] !leading-8 sm:font-semibold font-bold md:!leading-[52px] lg:!leading-[52px] xl:!leading-lg text-dark_black sm:mb-4 mb-[14px] aboutHeroMainText">
+            <h1 className="font-Rubik sm:text-4xl sm:!leading-10 md:text-[42px] lg:text-5xl xl:text-custom_3lg text-[28px] !leading-8 sm:font-semibold font-bold md:!leading-[52px] lg:!leading-[52px] xl:!leading-lg text-dark_black sm:mb-4 mb-[14px] aboutHeroMainText">
               The Foundations of
               <span className="text-orange font-Rubik"> German Immigration </span>
               Expertise

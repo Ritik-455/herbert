@@ -28,7 +28,7 @@ const Help = () => {
     }, [])
     let path = window.location.pathname;
     return (
-        <div className="px-6 bg-bgLinearGradient faq_animatio overflow-hidden max-w-[1920px] mx-auto">
+        <div className="px-6 bg-bg_Linear_Gradient faq_animatio overflow-hidden max-w-[1920px] mx-auto">
             <div className={`container max-w-[1180px] ${path === "/sources" ? "mt-0" : "lg:mt-[120px] sm:mt-20 mt-16"} bg-light_orange sm:py-16 py-5 rounded-xl flex items-center justify-center flex-col main_box`}>
                 <PrimaryHeading className="max-w-[632px] text-center main_box">
                     <span className="text-white font-rubik sm:!text-4xl xl:!text-[48px] xl:leading-[56px]">Need Help in Your Visa? <br className="lg:block hidden" /> Ask Herbert Now!</span>

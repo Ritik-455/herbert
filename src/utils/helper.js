@@ -40,6 +40,7 @@ export const FEATURES_DATA = [
     para: "Let Herbert guide you through your fresh start in Germany once you get there.",
   },
 ];
+
 export const PLANS_DATA = [
   {
     heading: "$5/mo",

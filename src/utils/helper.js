@@ -4,9 +4,9 @@ import featuresThree from "../assets/images/home/svg/features-numb-3.svg";
 import featuresFour from "../assets/images/home/svg/features-numb-4.svg";
 import featuresFive from "../assets/images/home/svg/features-numb-5.svg";
 import featuresSix from "../assets/images/home/svg/features-numb-6.svg";
-import facebook from "../assets/images/home/svg/Facebook.svg";
-import instagram from "../assets/images/home/svg/Instagram.svg";
-import linkedIn from "../assets/images/home/svg/LinkedIn.svg";
+import facebook from "../assets/images/home/svg/facebook2.svg";
+import instagram from "../assets/images/home/svg/instagram.svg";
+import linkedIn from "../assets/images/home/svg/linkedIn.svg";
 import setting from '../assets/images/about/svg/setting.svg'
 import request from '../assets/images/about/svg/request.svg'
 import timer from '../assets/images/about/svg/timer.svg'
@@ -40,6 +40,7 @@ export const FEATURES_DATA = [
     para: "Let Herbert guide you through your fresh start in Germany once you get there.",
   },
 ];
+
 export const PLANS_DATA = [
   {
     heading: "$5/mo",
@@ -83,7 +84,7 @@ export const FOOTER_DATA = [
     socialLinks: [facebook, instagram, linkedIn],
   },
 ];
-
+ 
 export const FAQ_CONTENT = [
   {
     mainText: "What is Herbert?",

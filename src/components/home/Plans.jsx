@@ -34,7 +34,7 @@ const Plans = () => {
           <span className='text-orange font-Rubik'> Plans</span>
         </PrimaryHeading>
         <PrimaryParagraph text="Lorem ipsum dolor sit amet consectetur. Tellus ipsum semper eget ornare justo netus proin lacus sed." className="text-center max-w-[556px] mx-auto mt-4" />
-        <div className="flex flex-col md:flex-row justify-around custom_lg:justify-between mt-4 lg:mt-14 flex-wrap items-center md:items-start">
+        <div className="flex flex-col md:flex-row justify-around custom_lg:justify-between lg:mt-14 flex-wrap items-center md:items-start">
           {PLANS_DATA.map((data, index) => (
             <div className={`${index === 2 ? "gap-0 mt-8 custom_lg:mt-0" : "gap-[52px]"} md:flex mt-8 custom_lg:mt-0 card_anim`} key={index}>
               <div className="max-w-[306px] w-full">
@@ -44,8 +44,8 @@ const Plans = () => {
                     <p className={`${index === 1 ? "text-black" : "text-white"} font-normal text-xs md:text-base`}>{data.plan}</p>
                   </div>
                 </div>
-                <p className='font-normal text-sm md:text-base text-grey mt-5 lg:mt-4'>{data.para}</p>
-                <p className='font-bold text-base text-dark_black mt-6'>What’s included?</p>
+                <p className='font-normal text-sm md:text-base text-grey mt-4'>{data.para}</p>
+                <p className='font-bold text-base text-dark_black mt-8 md:mt-6'>What’s included?</p>
                 <div className="flex mt-6 gap-1 items-center">
                   <TickMarck />
                   <p className='font-normal text-base text-grey'>{data.message}</p>

@@ -2,13 +2,16 @@ import footerLogo from '../assets/images/home/webp/footer-logo.png'
 import { FOOTER_DATA } from '../utils/helper'
 import PrimaryParagraph from './PrimaryParagraph'
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <div className='bg-[#FFF8F2] lg:pt-20 md:pt-16 pt-11 pb-4 max-w-[1920px] mx-auto'>
       <div className='container max-w-[1180px]'>
         <div className='row lg:justify-between justify-start'>
           <div className='lg:col-4 md:col-6 w-full flex flex-col items-start justify-start px-5'>
-            <div className='sm:max-w-[326px] max-w-[210px] sm:h-[98px] h-16 w-full cursor-pointer'>
-              <img src={footerLogo} alt="footer logo" className='w-full h-full object-cover pointer-events-none' />
+            <div className='sm:max-w-[326px] max-w-[210px] sm:h-[98px] h-16 w-full'>
+              <a href="#">
+                <img src={footerLogo} alt="footer logo" className='w-full h-full object-cover pointer-events-none' />
+              </a>
             </div>
             <PrimaryParagraph text="Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor." className="lg:mt-4 mt-3" />
           </div>
@@ -43,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='w-full h-px bg-[#00000029] sm:mt-12 mt-11 mb-4'></div>
-      <p className='text-grey font-normal text-center max-sm:text-sm'>Copyright © 2024 herbert, All rights reserved</p>
+      <p className='text-grey font-normal text-center max-sm:text-sm'>Copyright © {year} herbert, All rights reserved</p>
     </div>
   )
 }

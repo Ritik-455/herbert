@@ -85,7 +85,7 @@ const Faq = () => {
           ))}
         </div>
         <div className='flex items-center justify-center'>
-          <PrimaryButton BtnText="View All" className="sm:mt-12 mt-8" />
+          <PrimaryButton BtnText="View All" className="sm:mt-6 mt-4" />
         </div>
       </div>
     </div>

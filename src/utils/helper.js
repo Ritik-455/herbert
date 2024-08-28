@@ -5,8 +5,8 @@ import featuresFour from "../assets/images/home/svg/features-numb-4.svg";
 import featuresFive from "../assets/images/home/svg/features-numb-5.svg";
 import featuresSix from "../assets/images/home/svg/features-numb-6.svg";
 import facebook from "../assets/images/home/svg/facebook2.svg";
-import instagram from "../assets/images/home/svg/instagram.svg";
-import linkedIn from "../assets/images/home/svg/linkedIn.svg";
+import instagram from "../assets/images/home/svg/instagram2.svg";
+import linkedIn from "../assets/images/home/svg/linkedIn2.svg";
 import setting from '../assets/images/about/svg/setting.svg'
 import request from '../assets/images/about/svg/request.svg'
 import timer from '../assets/images/about/svg/timer.svg'

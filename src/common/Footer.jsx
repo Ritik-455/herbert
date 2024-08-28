@@ -21,7 +21,7 @@ const Footer = () => {
                     <ul className='gap-2 flex flex-col'>
                       {obj.links.map((val, index) => (
                         <li key={index} className='hover:opacity-50 ease-linear duration-300'>
-                          <a href="/" className='font-normal text-grey'>{val}</a>
+                          <a href="/" className='font-normal text-grey max-sm:text-sm'>{val}</a>
                         </li>
                       ))}
                     </ul>

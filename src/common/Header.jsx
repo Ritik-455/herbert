@@ -56,7 +56,7 @@ const Header = () => {
         <div
           className={`${nav && "max-lg:left-[-100%]"} ${
             !nav && "max-lg:start-0"
-          } flex items-center gap-11 z-40 max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 max-lg:bg-white transition-all duration-300 ease-linear`}
+          } flex items-center gap-11 z-40 max-lg:flex-col max-lg:items-center max-lg:justify-start pt-[108px] max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 max-lg:bg-white transition-all duration-300 ease-linear`}
         >
           {NAV_LINKS_LIST.map((obj, index) => (
             <a

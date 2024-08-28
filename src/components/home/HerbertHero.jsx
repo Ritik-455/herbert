@@ -66,7 +66,7 @@ const HerbertHero = () => {
               text="Herbert Visa: Your AI-powered assistant for German visa and
                 immigration processes"
             />
-            <div className="heroCardAnimation">
+            <div className="heroCardAnimation flex justify-center">
               <PrimaryButton
                 BtnText="Start your conversation with Herbert"
                 className="max-sm:text-sm"
@@ -88,24 +88,7 @@ const HerbertHero = () => {
 
       <div className="container max-w-[1180px] relative z-20 heroCardSection">
         <div className="row items-center justify-center">
-<<<<<<< HEAD
           {CARD_DATA.map((obj, index) => (
-            <div
-              key={index}
-              className={`lg:col-4 md:min-h-[238px] h-auto md:col-6 max-md:mb-3 w-full flex items-center justify-center px-3 heroCardAnimation`}
-            >
-              <div className="lg:max-w-[364px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-500 bg-white py-5 flex items-center justify-center flex-col hover:shadow-cardHoverShadow hover:border-none hover:min-h-[238px]">
-                <div>
-                  <img src={obj.img} alt="images of diff types" />
-                </div>
-                <p className="font-semibold text-xl pb-3 pt-4">
-                  {obj.mainText}
-                </p>
-                <p className="font-normal text-grey text-center max-w-[192px]">
-                  {obj.content}
-                </p>
-=======
-          {CARD_DATA.map((obj, index) =>
             <div className={`lg:col-4 md:min-h-[238px] ${index === 0 || index === 1 ? "max-md:mb-3" : "mb-0"} h-auto md:col-6 w-full flex items-center justify-center px-3 heroCardAnimation`} key={index}>
               <div className="lg:max-w-[364px] max-sm:max-w-[327px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-300 bg-white py-5 flex items-center justify-center flex-col hover:shadow-cardHoverShadow hover:border-none sm:hover:min-h-[238px] hover:min-h-[180px]">
                 <div className="sm:size-14 size-12">
@@ -113,7 +96,6 @@ const HerbertHero = () => {
                 </div>
                 <p className="font-medium sm:text-xl text-base max-sm:leading-[19px] sm:pb-3 pb-2 pt-4">{obj.mainText}</p>
                 <p className="font-normal text-grey text-center max-w-[192px] max-sm:text-sm">{obj.content}</p>
->>>>>>> 4625aef15364795874549567da58cada8f35bd98
               </div>
             </div>
           ))}

@@ -51,7 +51,7 @@ const AboutHero = () => {
                 text="Herbert, our AI chatbot, is built on a comprehensive understanding of German immigration law. To ensure accuracy and reliability, Herbert's knowledge base is derived from the following authoritative sources:"
               />
             </div>
-            <div className="aboutHeroButton">
+            <div className="aboutHeroButton flex justify-center">
               <PrimaryButton BtnText="Contact Us" className="py-3" />
             </div>
           </div>

@@ -41,7 +41,7 @@ const Features = () => {
   const limitedFeatures2 = FEATURES_DATA.slice(3, 6);
 
   return (
-    <div className="2xl:max-w-[1920px] mx-auto relative overflow-hidden  main">
+    <div className="2xl:max-w-[1920px] mx-auto relative overflow-hidden lg:main">
       <div className='container max-w-[1180px] py-20 xl:pb-0 xl:pt-[119px] xl:mb-[119px]'>
         <PrimaryHeading text="Herbert Main" className="text-center">
           <span className='text-orange font-Rubik'> Features</span>
@@ -87,7 +87,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:block absolute left-0 2xl:left-[14%] bottom-0 z-[-1]"><img src={bottomLayer} alt="bottomLayer" className='w-full' /></div>
+        <div className="sm:hidden lg:block absolute -left-[20%] md:left-[20%] 2xl:left-0 md:bottom-0 z-[-1] w-[800px] sm:w-fit"><img src={bottomLayer} alt="bottomLayer" className='w-full' /></div>
       </div>
       <div className="hidden lg:block absolute right-0 top-[8%] z-[-1]"><img src={topLayer} alt="topLayer" /></div>
       <div className="hidden lg:block absolute left-[-1%] top-[25%] z-[-1]"><img src={leftLayer} alt="leftLayer" /></div>

@@ -20,18 +20,14 @@ const Features = () => {
         start: '10% 8%',
         end: '120% 60%',
         animation: imageAnimation,
-        markers: false,
-        pin: true,
         toggleActions: "play",
       });
       imageAnimation.from('.middleImg', { opacity: 0, scale: 0 });
       imageAnimation.from(".card_animation", {
         x: -1000,
-        stagger: 0.3
       })
       imageAnimation.from(".card_animation2", {
         x: 1000,
-        stagger: 0.3
       })
 
     });
@@ -72,7 +68,7 @@ const Features = () => {
             <div className="">
               {limitedFeatures.map((data, index) => (
                 <div className="max-w-[391px] w-full mt-10 card_animation" key={index}>
-                  <div className="flex"><img src={data.img} alt="numbers" /></div>
+                  <div className="flex"><img src={data.img} alt="numbers" className='size-7 sm:size-9' /></div>
                   <p className='font-medium text-base md:text-xl text-dark_black mt-4'>{data.para}</p>
                 </div>
               ))}
@@ -80,7 +76,7 @@ const Features = () => {
             <div className="">
               {limitedFeatures2.map((data, index) => (
                 <div className="max-w-[391px] w-full mt-10 card_animation2" key={index}>
-                  <div className="flex"><img src={data.img} alt="numbers" /></div>
+                  <div className="flex"><img src={data.img} alt="numbers" className='size-7 sm:size-9' /></div>
                   <p className='font-medium text-base md:text-xl text-dark_black mt-4'>{data.para}</p>
                 </div>
               ))}

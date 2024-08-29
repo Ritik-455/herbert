@@ -36,10 +36,10 @@ const Plans = () => {
         <PrimaryParagraph text="Lorem ipsum dolor sit amet consectetur. Tellus ipsum semper eget ornare justo netus proin lacus sed." className="text-center max-w-[556px] mx-auto mt-4" />
         <div className="flex flex-col md:flex-row justify-around custom_lg:justify-between lg:mt-14 flex-wrap items-center md:items-start">
           {PLANS_DATA.map((data, index) => (
-            <div className={`${index === 2 ? "gap-0 mt-8 custom_lg:mt-0" : "gap-[52px]"} md:flex mt-8 custom_lg:mt-0 card_anim`} key={index}>
+            <div className={`${index === 2 ? "gap-0 mt-8 custom_lg:mt-0" : "gap-[29px] lg:gap-[52px]"} md:flex mt-8 custom_lg:mt-0 card_anim`} key={index}>
               <div className="max-w-[306px] w-full">
                 <div className="flex justify-between items-center w-[306px] ">
-                  <h4 className='font-Rubik font-semibold text-2xl md:text-3xl custom_lg:text-2lg'>{data.heading}</h4>
+                  <h4 className='font-Rubik font-semibold text-2xl md:text-3xl custom_lg:text-custom_2lg'>{data.heading}</h4>
                   <div className={`${index === 0 && "bg-dark_black"} ${index === 1 && "bg-yellow"} ${index === 2 && "bg-orange"} p-[5px_8px] rounded-[6px]`}>
                     <p className={`${index === 1 ? "text-black" : "text-white"} font-normal text-xs md:text-base`}>{data.plan}</p>
                   </div>

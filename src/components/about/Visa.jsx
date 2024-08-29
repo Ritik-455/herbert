@@ -40,7 +40,7 @@ const Visa = () => {
                 {VisaCodeData1.map((data, index) => (
                   <div className="max-w-[248px] w-full rounded-xl bg-white flex flex-col items-center py-[18px] sm:py-5 md:py-7 visa_card" key={index}>
                     <img src={data.img} alt="images" />
-                    <p className='font-medium text-base sm:text-lg md:text-xl text-dark_black max-w-[197px] text-center mt-4'>{data.para}</p>
+                    <p className='font-medium text-base sm:text-lg lg:text-xl text-dark_black max-w-[197px] text-center mt-4'>{data.para}</p>
                   </div>
                 ))}
               </div>
@@ -48,7 +48,7 @@ const Visa = () => {
                 {VisaCodeData2.map((data, index) => (
                   <div className={`${index === 1 && "mt-9"} max-w-[248px] w-full rounded-xl bg-white flex flex-col items-center py-[18px] sm:py-5 md:py-7 visa_card`} key={index}>
                     <img src={data.img} alt="images" />
-                    <p className='font-medium text-base sm:text-lg md:text-xl text-dark_black max-w-[197px] text-center mt-3.5 md:mt-4'>{data.para}</p>
+                    <p className='font-medium text-base sm:text-lg lg:text-xl text-dark_black max-w-[197px] text-center mt-3.5 md:mt-4'>{data.para}</p>
                   </div>
                 ))}
               </div>

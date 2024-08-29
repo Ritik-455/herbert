@@ -45,7 +45,7 @@ const HerbertHero = () => {
   }, []);
 
   return (
-    <div className="bg-heroBgImg bg-full relative max-w-[1920px] mx-auto">
+    <div className="bg-hero_Bg_Img bg-full relative max-w-[1920px] mx-auto">
       <Header />
       <div className="absolute lg:top-[16%] top-[10%] left-[7%] max-sm:hidden xl:opacity-100 sm:opacity-15 heroMainText">
         <img src={helloLeftBoy} alt="helloLeftBoy" width={329} />
@@ -56,7 +56,7 @@ const HerbertHero = () => {
       <div className="xl:pt-[139px] container max-w-[1180px] pt-[72px] lg:pb-[198px] pb-20 relative z-10">
         <div className="max-sm:mb-20">
           <div className="mx-auto text-center">
-            <h1 className="font-Rubik md:text-3lg sm:text-5xl text-3xl font-semibold sm:leading-lg text-dark_black max-w-[716px] text-center sm:pb-4 pb-[14px] mx-auto heroMainText">
+            <h1 className="font-Rubik sm:text-custom_3lg text-3xl font-semibold sm:leading-lg text-dark_black max-w-[716px] text-center sm:pb-4 pb-[14px] mx-auto heroMainText">
               Navigating{" "}
               <span className="text-orange font-Rubik">German Bureaucracy</span>{" "}
               with ease
@@ -90,8 +90,10 @@ const HerbertHero = () => {
         <div className="row items-center justify-center">
           {CARD_DATA.map((obj, index) => (
             <div
-              className={`lg:col-4 md:min-h-[238px] h-[155px] ${
-                index === 0 || index === 1 ? "max-md:mb-3" : "mb-0"
+              className={`lg:col-4 min-h-[155px] ${
+                index === 0 || index === 1
+                  ? "max-md:mb-3 md:mb-6 lg:mb-0"
+                  : "mb-0"
               } h-auto md:col-6 w-full flex items-center justify-center px-3 heroCardAnimation`}
               key={index}
             >

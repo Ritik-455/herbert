@@ -32,7 +32,7 @@ const Team = () => {
   }, [])
 
   return (
-    <div className='relative max-w-[1920px] mx-auto lg:mt-36 md:mt-20 mt-16 sm:mb-8 lg:pt-36 xl:pb-60 md:pb-36 max-sm:mb-20 py-0 teamSection'>
+    <div className='relative max-w-[1920px] mx-auto lg:mt-36 md:mt-20 mt-16 sm:mb-20 lg:pt-36 xl:pb-60 md:pb-36 max-sm:mb-20 py-0 teamSection'>
       <div className='absolute opacity-10 lg:-top-36 md:-top-28 -top-16 right-0 z-0 max-sm:max-w-[150px] lg:max-w-[630px] max-sm:h-[470px] sm:max-w-[400px] pointer-events-none'>
         <img src={teamTopRightVector} alt="top right vector" className='w-full h-full' />
       </div>

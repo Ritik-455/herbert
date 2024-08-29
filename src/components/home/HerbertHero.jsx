@@ -90,10 +90,8 @@ const HerbertHero = () => {
         <div className="row items-center justify-center">
           {CARD_DATA.map((obj, index) => (
             <div
-              className={`lg:col-4 min-h-[155px] ${
-                index === 0 || index === 1
-                  ? "max-md:mb-3 md:mb-6 lg:mb-0"
-                  : "mb-0"
+              className={`lg:col-4 md:min-h-[238px] min-h-[155px] ${
+                index === 0 || index === 1 ? "max-md:mb-3 lg:mb-0" : "mb-0"
               } h-auto md:col-6 w-full flex items-center justify-center px-3 heroCardAnimation`}
               key={index}
             >
@@ -101,10 +99,10 @@ const HerbertHero = () => {
                 <div className="sm:size-14 size-12">
                   <img src={obj.img} alt="images of diff types" />
                 </div>
-                <p className="font-semibold text-xl pb-3 pt-4">
+                <p className="font-medium sm:text-xl text-base max-sm:leading-[19px] sm:pb-3 pb-2 pt-4">
                   {obj.mainText}
                 </p>
-                <p className="font-normal text-grey text-center max-w-[192px]">
+                <p className="font-normal text-grey text-center md:max-w-[192px] max-sm:text-sm">
                   {obj.content}
                 </p>
               </div>

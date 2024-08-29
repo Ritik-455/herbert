@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='bg-[#FFF8F2] lg:pt-20 md:pt-16 pt-11 pb-4 max-w-[1920px] mx-auto'>
       <div className='container max-w-[1180px]'>
         <div className='row lg:justify-between justify-start'>
-          <div className='lg:col-4 md:col-6 w-full flex flex-col items-start justify-start px-5'>
+          <div className='lg:col-4 w-full flex flex-col items-start justify-start px-5'>
             <div className='sm:max-w-[326px] max-w-[210px] sm:h-[98px] h-16 w-full'>
               <a href="#">
                 <img src={footerLogo} alt="footer logo" className='w-full h-full object-cover pointer-events-none' />
@@ -31,7 +31,7 @@ const Footer = () => {
                   ) : obj.socialLinks ? (
                     <ul className='flex items-center justify-start gap-3'>
                       {obj.socialLinks.map((val, index) => (
-                        <li key={index} className='size-9 bg-orange_gradient rounded-full flex items-center justify-center hover:-translate-y-2 ease-linear duration-300 cursor-pointer'>
+                        <li key={index} className='size-9 bg-orange_gradient hover:bg-bg_Linear_Gradient hover:shadow-lg rounded-full flex items-center justify-center transitionEffect cursor-pointer'>
                           <a href="/">
                             <img src={val} alt="social links" />
                           </a>
